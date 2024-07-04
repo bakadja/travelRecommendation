@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        #header-search {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <aside id="aside"></aside>
+        <article id="about-us">
+            <h1>ABOUT US</h1>
+            <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services to our customers.
+                Ours mission is to <b>provide  the best experience</b> for people traveling to different destinations around the world.<br>
+                Our Values include integrity, respect, and excellence. We are committed to providing the <b>best services to our customers</b>.
+                We are here to help you plan your next trip. We offer a wide range of services including booking flights, hotels, and car rentals.<br>
+                Feel free to explore our website and contact us if you have any questions. We are here to help you plan your next adventure! 
+            </p>
+        </article>
+        <div id="team">
+            <h2>Our <br>
+                Team
+            </h2>
+        
+            <div class="card">
+                <i class="fa-solid fa-circle-user"></i>
+                <h3>John Doe</h3>
+                <p>John is responsible for overseeing the overall operations and strategic direction of the company.</p>
+                <p class="btn">CEO</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-circle-user"></i>
+                <h3>Jane Doe</h3>
+                <p>Jane is responsible for the day-to-day running and management of the company.</p>
+                <p class="btn">COO</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-circle-user"></i>
+                <h3>Thomas Smith</h3>
+                <p>Thomas is responsible for overseeing the technology and product development of the company.</p>
+                <p class="btn">CTO</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const includeHTML = (el, url) => {
+            fetch(url)
+              .then(response => response.text())
+              .then(data => {
+                el.innerHTML = data;
+              })
+              .catch(err => console.log(err));
+          };
+        
+          includeHTML(document.getElementById("header"), "header.html");
+          includeHTML(document.getElementById("aside"), "aside.html");
+        });
+    </script>
+</body>
+</html>

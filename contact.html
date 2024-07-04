@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        #header-search {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <aside id="aside"></aside>
+        <div id="contact-us">
+            <div>
+                <h1>CONTACT US</h1>
+                <p>Get in touch</p>
+            </div>
+            <form action="" >
+                <div>
+                    <label for="uname" >Name</label><br><br>
+                    <input type="text" id="uname" name="uname" minlength="3" required>
+                </div>
+                <div>
+                    <label for="email">Email</label><br><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label><br><br>
+                    <textarea id="message" name="message" required minlength="4" ></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const includeHTML = (el, url) => {
+                fetch(url)
+                    .then(response => response.text())
+                    .then(data => {
+                        el.innerHTML = data;
+                    })
+                    .catch(err => console.log(err));
+            };
+
+            includeHTML(document.getElementById("header"), "header.html");
+            includeHTML(document.getElementById("aside"), "aside.html");
+        });
+    </script>
+</body>
+</html>

@@ -45,17 +45,20 @@ nav a {
     border: 1px solid #ccc;
     border-radius: 2rem;
     padding: 1rem 2rem;
-    background-color: white;
+    background-color: #ffffff;
+    flex: 0 1 auto;
+    
 }
 
 .search-container input {
     border: none;
     outline: none;
     padding: 0.5rem;
-    width: 14rem;
+    flex: 0 1 auto;
 }
 
 .search-container div {
+    flex: 0 1 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,6 +70,7 @@ nav a {
 }
 
 .search-container button {
+    flex: 0 1 auto;
     background-color: #027577;
     color: white;
     border: none;
@@ -82,49 +86,69 @@ nav a {
 /* Main content */
 main {
     background-image: url("./lisbon-portugal.jpg");
-    height: 83vh;
+    height: 53vh;
     background-size: cover;
     background-position: center;
     position: absolute;
     z-index: 0;
     width: 90vw;
+
+    /* background-image: url("./lisbon-portugal.jpg"); */
 }
+
+/* Aside */
 aside {
-    background-color: white;
-    /* padding: 1rem; */
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-    position: absolute;
-    /* left: 7rem; */
-    /* top: 5rem; */
     display: inline-flex;
     flex-direction: column;
     gap: 1rem;
-    height:60vh;
+    height:43vh;
     width: 2vw;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    flex: 0 1 auto;
 }
 
 .vertical-line {
     display: inline-block;
-    width: 2px; /* Largeur de la ligne */
-    height: 30%; /* Hauteur de la ligne */
-    background-color: rgb(220, 37, 37); /* Couleur de la ligne */
-}
-h1 {
-    font-size: 4rem;
-    color: white;
-    font-weight: bolder;
+    width: 3px; 
+    height: 45%;
+    background-color: #D95B02; 
 }
 
-section {
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab {
+    font-size: 1.5rem;
+    color: #D95B02;
+}
+
+/* Section */
+
+#main-section {
     display: inline-block;
     position: relative;
     top: 7rem;
     left: 6rem;
-    z-index: 2;
+    z-index: 1; 
+     height: 53vh;
+
+    /* display: inline-flex;
+     height: 50vh; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; */
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: bolder;
 }
 
 section p {
@@ -136,9 +160,76 @@ section p {
     font-size: 1.5rem;
 }
 
-main button {
+section button {
+    background-color: #0F3738BF;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-weight: 800;
+    transition: transform 0.2s;
+    transform: scale(1);
+}
+
+section button:hover {
+    background-color: #027577;
+    transform: scale(1.1)
+}
+
+
+/* for about.html template */
+
+#about-us {
     
-    background-color: #017578BF;
+    margin: 1rem 0 2rem 0;
+    padding: 2rem 2rem 1rem 5rem;
+  
+}
+
+#about-us p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 91%;
+    position: relative;
+    left: 6rem;
+    align-items: center;
+}
+
+#team h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.card {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 24%;
+}
+.card p {
+    margin-top: 0.5rem;
+    line-height: 1.2;
+}
+
+div > i {
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.btn {
+    background-color: #027CD2;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -146,9 +237,71 @@ main button {
     cursor: pointer;
     margin-top: 1rem;
     font-weight: 800;
+    text-align: center;
 }
 
-main button:hover {
+/* for contact.html template */
+
+#contact-us {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: flex-end;
+    height: 45vh;
+    z-index: 2;
+    flex-basis: auto;
+}
+
+#contact-us > div {
+    flex: 0 1 auto;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: rgb(8, 54, 22, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+    align-self: center;
+}
+
+#contact-us p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    display: inline-block;
+}
+
+#contact-us form {
+    flex: 1 ;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    height: 35vh;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: rgb(8, 54, 22, 0.5);
+    padding: 1rem;
+    color: white;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+textarea {
+    height: 9vh;
+}
+
+button[type="submit"] {
     background-color: #027577;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 800;
+    width: 100%;
 }
 

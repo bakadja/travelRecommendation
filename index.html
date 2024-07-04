@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <aside id="aside"></aside>
+        <section id="main-section">
+            <h1>EXPLORE <br> DREAM <br> DESTINATION</h1>
+            <p>
+                It encourages exploration of unfamiliar <br>
+                territories, embracing diverse cultures and <br>
+                landscapes, while pursuing the desired <br>
+                destination that captivates the heart and <br>
+                ignites a sense of wonder.
+            </p>
+            <div>
+                <button>Book Now</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const includeHTML = (el, url) => {
+                fetch(url)
+                    .then(response => response.text())
+                    .then(data => {
+                        el.innerHTML = data;
+                    })
+                    .catch(err => console.log(err));
+            };
+
+            includeHTML(document.getElementById("header"), "header.html");
+            includeHTML(document.getElementById("aside"), "aside.html");
+
+        });
+    </script>
+</body>
+
+</html>
