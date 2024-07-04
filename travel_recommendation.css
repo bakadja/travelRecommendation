@@ -92,6 +92,7 @@ main {
     position: absolute;
     z-index: 0;
     width: 90vw;
+    z-index: 0;
 
     /* background-image: url("./lisbon-portugal.jpg"); */
 }
