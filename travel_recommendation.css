@@ -38,6 +38,12 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #D95B02;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .search-container {
     display: flex;
     justify-content: center;
@@ -46,19 +52,16 @@ nav a {
     border-radius: 2rem;
     padding: 1rem 2rem;
     background-color: #ffffff;
-    flex: 0 1 auto;
-    
 }
 
 .search-container input {
     border: none;
     outline: none;
     padding: 0.5rem;
-    flex: 0 1 auto;
+    min-width: 210px;
 }
 
 .search-container div {
-    flex: 0 1 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,58 +73,57 @@ nav a {
 }
 
 .search-container button {
-    flex: 0 1 auto;
     background-color: #027577;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: transform 0.1s;
 }
 
 .search-container input::placeholder {
     color: #69A2A9;
 }
 
-/* Main content */
-main {
-    background-image: url("./lisbon-portugal.jpg");
-    height: 53vh;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    z-index: 0;
-    width: 90vw;
-    z-index: 0;
-
-    /* background-image: url("./lisbon-portugal.jpg"); */
+.search-container button:hover {
+    transform: scale(1.1);
+    background-color: #027577E5;
 }
 
-/* Aside */
+/* Main */
+
+/*aside */
+main {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   gap: 1rem;
+   height: 80vh;
+   background-image: url("./lisbon-portugal.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+}
+
 aside {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    gap: 1rem;
-    height:43vh;
-    width: 2vw;
     align-items: center;
     justify-content: space-around;
-    flex: 0 1 auto;
 }
 
 .vertical-line {
-    display: inline-block;
-    width: 3px; 
-    height: 45%;
+    width: 2.5px;
+    height: 30%;
     background-color: #D95B02; 
 }
 
 .social-icons {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
+    gap: 3rem;
+    height: 35%;
 }
 
 .fab {
@@ -129,87 +131,92 @@ aside {
     color: #D95B02;
 }
 
-/* Section */
+/*section */
 
 #main-section {
-    display: inline-block;
-    position: relative;
-    top: 7rem;
-    left: 6rem;
-    z-index: 1; 
-     height: 53vh;
-
-    /* display: inline-flex;
-     height: 50vh; 
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; */
+    grid-column: 3/ span 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 90%;
+    gap: 3rem;
+    z-index: 1;
 }
 
-h1 {
+#main-section h1 {
     font-size: 4rem;
-    color: white;
     font-weight: bolder;
-}
-
-section p {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.5rem;
+    padding: 1rem;
 }
 
-section button {
-    background-color: #0F3738BF;
+
+#main-section p {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+    color: white;
+    line-height: 1.5;
+     border-radius: 0.5rem;
+     padding: 1rem;
+     
+}
+
+#main-section button {
+    background-color: #027577;
     color: white;
     border: none;
-    padding: 0.75rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    margin-top: 2rem;
     font-weight: 800;
     transition: transform 0.2s;
     transform: scale(1);
 }
 
-section button:hover {
+#main-section button:hover {
     background-color: #027577;
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
-
-/* for about.html template */
+/* About template*/
 
 #about-us {
-    
-    margin: 1rem 0 2rem 0;
-    padding: 2rem 2rem 1rem 5rem;
-  
+    grid-column: 3 / span 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    color: white
+}
+
+#about-us h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    padding: 1rem;
 }
 
 #about-us p {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    line-height: 1.2;
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 1rem;
+    color: black;
     border-radius: 1rem;
+    padding: 1rem;
 }
 
 #team {
+    grid-column: 2 / span 10;
     display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-    width: 91%;
-    position: relative;
-    left: 6rem;
-    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 #team h2 {
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: bolder;
+    color : white;
 }
 
 .card {
@@ -217,14 +224,14 @@ section button:hover {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 24%;
+    height: 50%;
 }
+
 .card p {
-    margin-top: 0.5rem;
     line-height: 1.2;
 }
 
-div > i {
+.fa-solid {
     float: left;
     margin-right: 0.5rem;
 }
@@ -241,46 +248,47 @@ div > i {
     text-align: center;
 }
 
-/* for contact.html template */
+.btn:hover {
+    transform: scale(1.1);
+}
 
-#contact-us {
+/* for contact us */
+
+ #contact-us {
+    grid-column: span 11;
     display: flex;
-    justify-content: center;
-    gap: 5rem;
-    align-items: flex-end;
-    height: 45vh;
-    z-index: 2;
-    flex-basis: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
 #contact-us > div {
-    flex: 0 1 auto;
-    /* background-color: rgba(0, 0, 0, 0.3); */
     background-color: rgb(8, 54, 22, 0.5);
     padding: 1rem;
     border-radius: 1rem;
-    align-self: center;
 }
+
+#contact-us h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+} 
 
 #contact-us p {
     margin-top: 2rem;
     font-size: 1.5rem;
-    color: white;
     padding: 1rem;
-    display: inline-block;
 }
 
-#contact-us form {
-    flex: 1 ;
-    max-width: 40%;
+#contact-form {
     display: flex;
     flex-direction: column;
     gap: 1rem; 
-    height: 35vh;
-    /* background-color: rgba(0, 0, 0, 0.3); */
+    height: 45%;
     background-color: rgb(8, 54, 22, 0.5);
     padding: 1rem;
     color: white;
+    width: 50%;
+    border-radius: 1rem;
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -306,3 +314,6 @@ button[type="submit"] {
     width: 100%;
 }
 
+#contact-form button[type="submit"]:hover {
+    background-color: #027577E5;
+}

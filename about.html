@@ -10,17 +10,20 @@
         #header-search {
             visibility: hidden;
         }
+        aside {
+            grid-row: 1 / span 2;
+        }
     </style>
 </head>
 <body>
     <header id="header"></header>
     <main>
-        <aside id="aside"></aside>
+        <aside id="aside" ></aside>
         <article id="about-us">
             <h1>ABOUT US</h1>
             <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services to our customers.
-                Ours mission is to <b>provide  the best experience</b> for people traveling to different destinations around the world.<br>
-                Our Values include integrity, respect, and excellence. We are committed to providing the <b>best services to our customers</b>.
+                Ours mission is to <b>provide  the best experience</b> for people traveling to different destinations around the world. <br>
+                Our Values include integrity, respect, and excellence. We are committed to providing the <b>best services to our customers.</b>
                 We are here to help you plan your next trip. We offer a wide range of services including booking flights, hotels, and car rentals.<br>
                 Feel free to explore our website and contact us if you have any questions. We are here to help you plan your next adventure! 
             </p>
@@ -50,20 +53,6 @@
             </div>
         </div>
     </main>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          const includeHTML = (el, url) => {
-            fetch(url)
-              .then(response => response.text())
-              .then(data => {
-                el.innerHTML = data;
-              })
-              .catch(err => console.log(err));
-          };
-        
-          includeHTML(document.getElementById("header"), "header.html");
-          includeHTML(document.getElementById("aside"), "aside.html");
-        });
-    </script>
+    <script src="./travel_recommendation.js"></script>
 </body>
 </html>

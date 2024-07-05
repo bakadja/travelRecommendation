@@ -16,10 +16,10 @@
         <section id="main-section">
             <h1>EXPLORE <br> DREAM <br> DESTINATION</h1>
             <p>
-                It encourages exploration of unfamiliar <br>
-                territories, embracing diverse cultures and <br>
-                landscapes, while pursuing the desired <br>
-                destination that captivates the heart and <br>
+                It encourages exploration of unfamiliar 
+                territories, embracing diverse cultures and 
+                landscapes, while pursuing the desired 
+                destination that captivates the heart and 
                 ignites a sense of wonder.
             </p>
             <div>
@@ -27,24 +27,7 @@
             </div>
         </section>
     </main>
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const includeHTML = (el, url) => {
-                fetch(url)
-                    .then(response => response.text())
-                    .then(data => {
-                        el.innerHTML = data;
-                    })
-                    .catch(err => console.log(err));
-            };
-
-            includeHTML(document.getElementById("header"), "header.html");
-            includeHTML(document.getElementById("aside"), "aside.html");
-
-        });
-    </script>
+    <script src="./travel_recommendation.js"></script>
 </body>
 
 </html>
