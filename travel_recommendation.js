@@ -12,4 +12,5 @@
 
    includeHTML(document.getElementById("header"), "header.html");
    includeHTML(document.getElementById("aside"), "aside.html");
+    includeHTML(document.getElementById("footer"), "footer.html");
  });

@@ -1,81 +1,206 @@
 {
-    "countries": [
-      {
-        "id": 1,
-        "name": "Australia",
+  "countries": [
+    {
+      "id": 1,
+      "name": "Australia",
+      "cities": [
+        {
+          "name": "Sydney, Australia",
+          "imageUrl": "./images/sydney-opera-house-354375_1920.jpg",
+          "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
+        },
+        {
+          "name": "Melbourne, Australia",
+          "imageUrl": "enter_your_image_for_melbourne.jpg",
+          "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Japan",
+      "cities": [
+        {
+          "name": "Tokyo, Japan",
+          "imageUrl": "./images/himeji-4808853_1920.jpg",
+          "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
+        },
+        {
+          "name": "Kyoto, Japan",
+          "imageUrl": "enter_your_image_for_kyoto.jpg",
+          "description": "Known for its historic temples, gardens, and traditional tea houses."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Brazil",
+      "cities": [
+        {
+          "name": "Rio de Janeiro, Brazil",
+          "imageUrl": "./images/rio-de-janeiro-1963744_1920.jpg",
+          "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
+        },
+        {
+          "name": "São Paulo, Brazil",
+          "imageUrl": "enter_your_image_for_sao-paulo.jpg",
+          "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
+        }
+      ]
+    },
+     {
+      "id": 4,
+      "name": "India",
+      "cities": [
+        {
+          "name": "Delhi, India",
+          "imageUrl": "./images/dehli-4813658_1920.jpg",
+          "description": "The capital city known for its historic monuments, bustling markets, and vibrant culture."
+        },
+        {
+          "name": "Mumbai, India",
+          "imageUrl": "enter_your_image_for_mumbai.jpg",
+          "description": "A bustling city known for its Bollywood film industry, historic sites, and vibrant street food."
+        }
+      ]
+     },
+     {
+      "id": 5,
+      "name": "Italy",
+      "cities": [
+        {
+          "name": "Venice, Italy",
+          "imageUrl": "./images/venice-4756377_1920.jpg.jpg",
+          "description": "A city of canals, known for its romantic gondola rides, historic architecture, and art."
+        },
+        {
+          "name": "Florence, Italy",
+          "imageUrl": "enter_your_image_for_florence.jpg",
+          "description": "A city known for its Renaissance art and architecture, including the Duomo and Uffizi Gallery."
+        }
+      ]
+     },
+     {
+       "id": 6,
+        "name": "France",
         "cities": [
           {
-            "name": "Sydney, Australia",
-            "imageUrl": "enter_your_image_for_sydney.jpg",
-            "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
+            "name": "Paris, France",
+            "imageUrl": "./images/eiffel-tower-3349075_1920.jpg",
+            "description": "The capital city of France, known for its iconic landmarks like the Eiffel Tower and Louvre Museum."
           },
           {
-            "name": "Melbourne, Australia",
-            "imageUrl": "enter_your_image_for_melbourne.jpg",
-            "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
+            "name": "Nice, France",
+            "imageUrl": "enter_your_image_for_nice.jpg",
+            "description": "A charming city on the French Riviera known for its pebble beaches, Promenade des Anglais, and vibrant markets."
           }
         ]
+     },
+     {
+        "id": 7,
+          "name": "United States",
+          "cities": [
+            {
+              "name": "New York City, USA",
+              "imageUrl": "./images/new_yorkc-4854718_1920.jpg",
+              "description": "The city that never sleeps, famous for its skyscrapers, Central Park, and Times Square."
+            },
+            {
+              "name": "Los Angeles, USA",
+              "imageUrl": "enter_your_image_for_los-angeles.jpg",
+              "description": "The entertainment capital of the world, known for its Hollywood sign, beaches, and celebrity sightings."
+            }
+          ]
       },
       {
-        "id": 2,
-        "name": "Japan",
-        "cities": [
-          {
-            "name": "Tokyo, Japan",
-            "imageUrl": "enter_your_image_for_tokyo.jpg",
-            "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
-          },
-          {
-            "name": "Kyoto, Japan",
-            "imageUrl": "enter_your_image_for_kyoto.jpg",
-            "description": "Known for its historic temples, gardens, and traditional tea houses."
-          }
-        ]
+        "id": 8,
+          "name": "Spain",
+          "cities": [
+            {
+              "name": "Barcelona, Spain",
+              "imageUrl": "./images/barcelona-5188598_1920.jpg",
+              "description": "A vibrant city famous for its unique architecture, beautiful beaches, and lively street life."
+            },
+            {
+              "name": "Madrid, Spain",
+              "imageUrl": "enter_your_image_for_madrid.jpg",
+              "description": "The capital city known for its historic landmarks, art museums, and lively nightlife."
+            }
+          ]
       },
       {
-        "id": 3,
-        "name": "Brazil",
-        "cities": [
-          {
-            "name": "Rio de Janeiro, Brazil",
-            "imageUrl": "enter_your_image_for_rio.jpg",
-            "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
-          },
-          {
-            "name": "SÃ£o Paulo, Brazil",
-            "imageUrl": "enter_your_image_for_sao-paulo.jpg",
-            "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
-          }
-        ]
-      }
-    ],
-    "temples": [
-      {
-        "id": 1,
-        "name": "Angkor Wat, Cambodia",
-        "imageUrl": "enter_your_image_for_angkor-wat.jpg",
-        "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+        "id": 9,
+          "name": "China",
+          "cities": [
+            {
+              "name": "Beijing, China",
+              "imageUrl": "./images/beijing.jpg",
+              "description": "The capital city known for its historic sites like the Great Wall, Forbidden City, and Temple of Heaven."
+            },
+            {
+              "name": "Shanghai, China",
+              "imageUrl": "enter_your_image_for_shanghai.jpg",
+              "description": "A modern metropolis known for its skyscrapers, shopping, and vibrant nightlife."
+            }
+          ]
       },
       {
-        "id": 2,
-        "name": "Taj Mahal, India",
-        "imageUrl": "enter_your_image_for_taj-mahal.jpg",
-        "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
-      }
-    ],
-    "beaches": [
-      {
-        "id": 1,
-        "name": "Bora Bora, French Polynesia",
-        "imageUrl": "enter_your_image_for_bora-bora.jpg",
-        "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
-      },
-      {
-        "id": 2,
-        "name": "Copacabana Beach, Brazil",
-        "imageUrl": "enter_your_image_for_copacabana.jpg",
-        "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
-      }
-    ]
-  }
-  
+        "id": 10,
+          "name": "Egypt",
+          "cities": [
+            {
+              "name": "Cairo, Egypt",
+              "imageUrl": "./images/egypt-2086512_1920.jpg",
+              "description": "The capital of Egypt, known for its ancient pyramids and the Sphinx."
+            },
+            {
+              "name": "Luxor, Egypt",
+              "imageUrl": "enter_your_image_for_luxor.jpg",
+              "description": "A city on the east bank of the Nile River known for its ancient temples and tombs."
+            }
+          ]
+     }
+
+  ],
+  "temples": [
+    {
+      "id": 1,
+      "name": "Angkor Wat, Cambodia",
+      "imageUrl": "./images/angkor-809753_1920.jpg",
+      "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+    },
+    {
+      "id": 2,
+      "name": "Taj Mahal, India",
+      "imageUrl": "./images/taj-mahal-5519945_1920.jpg",
+      "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
+    },
+    {
+      "id": 3,
+      "name": "Borobudur, Indonesia",
+      "imageUrl": "./images/borobudur-3239795_1920.jpg",
+      "description": "A 9th-century Mahayana Buddhist temple in Central Java, Indonesia."
+    }
+  ],
+  "beaches": [
+    {
+      "id": 1,
+      "name": "Bora Bora, French Polynesia",
+      "imageUrl": "./images/bora-bora-3023437_1920.jpg",
+      "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+    },
+    {
+      "id": 2,
+      "name": "Cuba Beach, Brazil",
+      "imageUrl": "./images/cuba-beach-4153697_1920.jpg",
+      "description": "A famous beach in Cuba, with a vibrant atmosphere and scenic views."
+    },
+    {
+      "id": 3,
+      "name": "Waikiki Beach, Hawaii",
+      "imageUrl": "./images/hawaii-975623_1920.jpg",
+      "description": "A popular beach in Honolulu, Hawaii, known for its surfing, shopping, and dining."
+    }
+  ]
+ 
+}
