@@ -7,12 +7,15 @@
         {
           "name": "Sydney, Australia",
           "imageUrl": "./images/sydney-opera-house-354375_1920.jpg",
-          "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
+          "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge.",
+          "timeZone": "Australia/Sydney"
+
         },
         {
           "name": "Melbourne, Australia",
-          "imageUrl": "enter_your_image_for_melbourne.jpg",
-          "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
+          "imageUrl": "./images/melbourne-2986345_1920.jpg",
+          "description": "A cultural hub famous for its art, food, and diverse neighborhoods.",
+          "timeZone": "Australia/Melbourne"
         }
       ]
     },
@@ -23,12 +26,14 @@
         {
           "name": "Tokyo, Japan",
           "imageUrl": "./images/himeji-4808853_1920.jpg",
-          "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
+          "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture.",
+          "timeZone": "Asia/Tokyo"
         },
         {
           "name": "Kyoto, Japan",
-          "imageUrl": "enter_your_image_for_kyoto.jpg",
-          "description": "Known for its historic temples, gardens, and traditional tea houses."
+          "imageUrl": "./images/koyto-1459534_1920.jpg",
+          "description": "Known for its historic temples, gardens, and traditional tea houses.",
+          "timeZone": "Asia/Tokyo"
         }
       ]
     },
@@ -39,12 +44,15 @@
         {
           "name": "Rio de Janeiro, Brazil",
           "imageUrl": "./images/rio-de-janeiro-1963744_1920.jpg",
-          "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
+          "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks.",
+          "timeZone": "America/Sao_Paulo" 
+
         },
         {
           "name": "São Paulo, Brazil",
-          "imageUrl": "enter_your_image_for_sao-paulo.jpg",
-          "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
+          "imageUrl": "./images/sao-paulo-2939485_1920.jpg",
+          "description": "The financial hub with diverse culture, arts, and a vibrant nightlife.",
+          "timeZone": "America/Sao_Paulo"
         }
       ]
     },
@@ -55,12 +63,14 @@
         {
           "name": "Delhi, India",
           "imageUrl": "./images/dehli-4813658_1920.jpg",
-          "description": "The capital city known for its historic monuments, bustling markets, and vibrant culture."
+          "description": "The capital city known for its historic monuments, bustling markets, and vibrant culture.",
+          "timeZone": "Asia/Kolkata"
         },
         {
           "name": "Mumbai, India",
-          "imageUrl": "enter_your_image_for_mumbai.jpg",
-          "description": "A bustling city known for its Bollywood film industry, historic sites, and vibrant street food."
+          "imageUrl": "./images/mumbai-3544450_1920.jpg",
+          "description": "A bustling city known for its Bollywood film industry, historic sites, and vibrant street food.",
+          "timeZone": "Asia/Kolkata"
         }
       ]
      },
@@ -70,13 +80,15 @@
       "cities": [
         {
           "name": "Venice, Italy",
-          "imageUrl": "./images/venice-4756377_1920.jpg.jpg",
-          "description": "A city of canals, known for its romantic gondola rides, historic architecture, and art."
+          "imageUrl": "./images/venice-4756377_1920.jpg",
+          "description": "A city of canals, known for its romantic gondola rides, historic architecture, and art.",
+          "timeZone": "Europe/Rome"
         },
         {
           "name": "Florence, Italy",
-          "imageUrl": "enter_your_image_for_florence.jpg",
-          "description": "A city known for its Renaissance art and architecture, including the Duomo and Uffizi Gallery."
+          "imageUrl": "./images/florence-5473716_1920.jpg",
+          "description": "A city known for its Renaissance art and architecture, including the Duomo and Uffizi Gallery.",
+          "timeZone": "Europe/Rome"
         }
       ]
      },
@@ -87,12 +99,14 @@
           {
             "name": "Paris, France",
             "imageUrl": "./images/eiffel-tower-3349075_1920.jpg",
-            "description": "The capital city of France, known for its iconic landmarks like the Eiffel Tower and Louvre Museum."
+            "description": "The capital city of France, known for its iconic landmarks like the Eiffel Tower and Louvre Museum.",
+            "timeZone": "Europe/Paris"
           },
           {
             "name": "Nice, France",
-            "imageUrl": "enter_your_image_for_nice.jpg",
-            "description": "A charming city on the French Riviera known for its pebble beaches, Promenade des Anglais, and vibrant markets."
+            "imageUrl": "./images/nice-2150862_1920.jpg",
+            "description": "A charming city on the French Riviera known for its pebble beaches, Promenade des Anglais, and vibrant markets.",
+            "timeZone": "Europe/Paris"
           }
         ]
      },
@@ -103,12 +117,14 @@
             {
               "name": "New York City, USA",
               "imageUrl": "./images/new_yorkc-4854718_1920.jpg",
-              "description": "The city that never sleeps, famous for its skyscrapers, Central Park, and Times Square."
+              "description": "The city that never sleeps, famous for its skyscrapers, Central Park, and Times Square.",
+              "timeZone": "America/New_York"
             },
             {
               "name": "Los Angeles, USA",
-              "imageUrl": "enter_your_image_for_los-angeles.jpg",
-              "description": "The entertainment capital of the world, known for its Hollywood sign, beaches, and celebrity sightings."
+              "imageUrl": "./images/hollywood-sign-1598473_1920.jpg",
+              "description": "The entertainment capital of the world, known for its Hollywood sign, beaches, and celebrity sightings.",
+              "timeZone": "America/Los_Angeles"
             }
           ]
       },
@@ -119,12 +135,14 @@
             {
               "name": "Barcelona, Spain",
               "imageUrl": "./images/barcelona-5188598_1920.jpg",
-              "description": "A vibrant city famous for its unique architecture, beautiful beaches, and lively street life."
+              "description": "A vibrant city famous for its unique architecture, beautiful beaches, and lively street life.",
+              "timeZone": "Europe/Madrid"
             },
             {
               "name": "Madrid, Spain",
-              "imageUrl": "enter_your_image_for_madrid.jpg",
-              "description": "The capital city known for its historic landmarks, art museums, and lively nightlife."
+              "imageUrl": "./images/madrid-2179954_1920.jpg",
+              "description": "The capital city known for its historic landmarks, art museums, and lively nightlife.",
+              "timeZone": "Europe/Madrid"
             }
           ]
       },
@@ -135,12 +153,14 @@
             {
               "name": "Beijing, China",
               "imageUrl": "./images/beijing.jpg",
-              "description": "The capital city known for its historic sites like the Great Wall, Forbidden City, and Temple of Heaven."
+              "description": "The capital city known for its historic sites like the Great Wall, Forbidden City, and Temple of Heaven.",
+              "timeZone": "Asia/Shanghai"
             },
             {
               "name": "Shanghai, China",
-              "imageUrl": "enter_your_image_for_shanghai.jpg",
-              "description": "A modern metropolis known for its skyscrapers, shopping, and vibrant nightlife."
+              "imageUrl": "./images/shanghai-77851_1920.jpg",
+              "description": "A modern metropolis known for its skyscrapers, shopping, and vibrant nightlife.",
+              "timeZone": "Asia/Shanghai"
             }
           ]
       },
@@ -151,12 +171,14 @@
             {
               "name": "Cairo, Egypt",
               "imageUrl": "./images/egypt-2086512_1920.jpg",
-              "description": "The capital of Egypt, known for its ancient pyramids and the Sphinx."
+              "description": "The capital of Egypt, known for its ancient pyramids and the Sphinx.",
+              "timeZone": "Africa/Cairo"
             },
             {
               "name": "Luxor, Egypt",
-              "imageUrl": "enter_your_image_for_luxor.jpg",
-              "description": "A city on the east bank of the Nile River known for its ancient temples and tombs."
+              "imageUrl": "./images/luxor-4804579_1920.jpg",
+              "description": "A city on the east bank of the Nile River known for its ancient temples and tombs.",
+              "timeZone": "Africa/Cairo"
             }
           ]
      }
@@ -167,19 +189,23 @@
       "id": 1,
       "name": "Angkor Wat, Cambodia",
       "imageUrl": "./images/angkor-809753_1920.jpg",
-      "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+      "description": "A UNESCO World Heritage site and the largest religious monument in the world.",
+      "timeZone": "Asia/Phnom_Penh"
+
     },
     {
       "id": 2,
       "name": "Taj Mahal, India",
       "imageUrl": "./images/taj-mahal-5519945_1920.jpg",
-      "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
+      "description": "An iconic symbol of love and a masterpiece of Mughal architecture.",
+      "timeZone": "Asia/Kolkata"
     },
     {
       "id": 3,
       "name": "Borobudur, Indonesia",
       "imageUrl": "./images/borobudur-3239795_1920.jpg",
-      "description": "A 9th-century Mahayana Buddhist temple in Central Java, Indonesia."
+      "description": "A 9th-century Mahayana Buddhist temple in Central Java, Indonesia.",
+      "timeZone": "Asia/Jakarta"
     }
   ],
   "beaches": [
@@ -187,19 +213,22 @@
       "id": 1,
       "name": "Bora Bora, French Polynesia",
       "imageUrl": "./images/bora-bora-3023437_1920.jpg",
-      "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+      "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows.",
+      "timeZone": "Pacific/Tahiti"
     },
     {
       "id": 2,
       "name": "Cuba Beach, Brazil",
       "imageUrl": "./images/cuba-beach-4153697_1920.jpg",
-      "description": "A famous beach in Cuba, with a vibrant atmosphere and scenic views."
+      "description": "A famous beach in Cuba, with a vibrant atmosphere and scenic views.",
+      "timeZone": "America/Sao_Paulo"
     },
     {
       "id": 3,
       "name": "Waikiki Beach, Hawaii",
       "imageUrl": "./images/hawaii-975623_1920.jpg",
-      "description": "A popular beach in Honolulu, Hawaii, known for its surfing, shopping, and dining."
+      "description": "A popular beach in Honolulu, Hawaii, known for its surfing, shopping, and dining.",
+      "timeZone": "Pacific/Honolulu"
     }
   ]
  

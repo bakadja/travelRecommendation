@@ -25,7 +25,7 @@
     </nav>
     <div class="search-container" id="header-search">
     
-        <input type="search" placeholder="Enter a destination or keyword ">
+        <input type="search" placeholder="Enter a destination or keyword" id="search-input">
         <div>
             <span>
                 <svg fill="#01686D" width="24px" height="24px" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -35,8 +35,8 @@
                     </path>
                 </svg>
             </span>
-            <button>Search</button>
-            <button>Clear</button>
+            <button onclick="fetchAndDisplayTravelDestination()">Search</button>
+            <button onclick="clearResults()">Clear</button>
         </div>
     </div>
 </body>
