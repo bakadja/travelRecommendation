@@ -16,18 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
   includeHTML(document.getElementById("footer"), "footer.html");
 });
 
-function getFormInput() {
-const form = document.getElementById("contact-form");
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  const formData = new FormData(form);
-  const name = formData.get("uname");
-  const email = formData.get("email");
-  const message = formData.get("message");
-  alert(`Hello ${name}! Thank you for submitting your email: ${email} and Your message: ${message}`);
-  form.reset()
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const name = formData.get("uname");
+    const email = formData.get("email");
+    const message = formData.get("message");
+    alert(`Hello ${name}! Thank you for submitting your email: ${email} and Your message: ${message}`);
+    form.reset();
+  });
 });
-}
+
 
 // Prétraitement des données
 function preprocessData(data) {
