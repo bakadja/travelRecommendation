@@ -9,6 +9,7 @@ body {
     background-color: #f5f5f5;
     margin: 3rem 5%;
     font-size: 1rem;
+    width: 2208px
 }
 
 /* Navbar */
@@ -171,6 +172,7 @@ main {
     background-size: cover;
     background-position: center;
     z-index: 0;
+    width: 100%;
 
 }
 
@@ -359,9 +361,9 @@ aside {
     background-color: rgb(8, 54, 22, 0.5);
     padding: 1rem;
     color: white;
-    /* width: 50%; */
     border-radius: 1rem;
     width: 60%;
+    margin-right: 1rem;
 }
 
 input[type="text"], input[type="email"], textarea {
