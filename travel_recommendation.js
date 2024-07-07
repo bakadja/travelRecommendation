@@ -37,6 +37,7 @@ function preprocessData(data) {
     country.cities.map((city) => ({
       ...city,
       country: country.name,
+      country_key: "country, countries, Country, Countries, COUNTRIES, countrys, countrys, countrys, countrys,",
     }))
   );
 }
@@ -63,7 +64,7 @@ function preprocessData(data) {
 // Création de l'index de recherche
 function createSearchIndex(data) {
   const options = {
-    keys: ["name", "description", "country", "temple_key", "beach_key"],
+    keys: ["name", "description", "country", "temple_key", "beach_key", "country_key"],
     threshold: 0.3, // Ajuster selon le niveau de tolérance souhaité
   };
   return new Fuse(combineData(data), options);
