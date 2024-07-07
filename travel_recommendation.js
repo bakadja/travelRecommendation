@@ -79,7 +79,7 @@ async function fetchTravelData() {
   try {
     const response = await fetch("travel_recommendation_api.json");
     const data = await response.json();
-    console.log("Data preprocess:", combineData(data));
+    // console.log("Data preprocess:", combineData(data));
     return data;
   } catch (err) {
     console.error("Error:", err);
@@ -158,6 +158,10 @@ function fetchAndDisplayTravelDestination() {
     .then((data) => {
       const index = createSearchIndex(data);
       const results = searchByKeyword(index, keyword);
+      if (!results.length) {
+        alert("No country found.");
+        return;
+      }
       displayTravelResults(results);
     })
     .catch((err) => {
